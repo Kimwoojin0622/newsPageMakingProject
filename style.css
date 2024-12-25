@@ -1,0 +1,176 @@
+/* 검색창 부분 스타일 설정 */
+.search-section{
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 검색창 스타일 설정 */
+.search-section input{
+  max-width: 30vw;
+  height: 45px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+  font-size: 1em;
+}
+
+/* 검색 버튼 스타일 설정 */
+.search-section button{
+  height: 45px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+  font-family: "Roboto", serif;
+}
+
+/* 검색 버튼에 hover 시 */
+.search-section button:hover{
+  font-weight: bold;
+  background-color: rgb(218, 205, 205);
+}
+
+/* 로고 이미지 부분(섹션) 스타일 설정 */
+.header-img{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+/* 로고 이미지 스타일 설정 */
+.logo-img{
+  width: 300px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* 로고 이미지에 hover 했을 시, 살짝 투명하게 */
+.logo-img:hover {
+  opacity: 0.8;
+}
+
+/* KWJ의 TEXT부분 스타일 설정 */
+.header-text {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Merriweather", serif;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 1em;
+}
+
+/* 메뉴바 스타일 설정 */
+.menu-bar{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  border-top: 1px solid gray;
+  border-bottom: 4px solid black;
+}
+
+/* 메뉴 바의 버튼 스타일 설정 */
+.menu-bar button{
+  border: none;
+  background: none;
+  border-radius: 15px;
+
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  
+  font-family: "Roboto", serif;
+
+  transition: background-color 0.15s font-weight 0.15s;
+}
+
+/* 메뉴 바 버튼 hover 했을 시, 색상 변경 */
+.menu-bar button:hover{
+  
+  background-color: ghostwhite;
+  font-weight: bold;
+}
+
+/* 뉴스 이미지 스타일 설정 */
+.news-img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* 각 뉴스별로 줄을 그어줌 */
+.news {
+  border-bottom: 2px solid black;
+}
+
+/* 각 뉴스별로 여백을 띄어줌 */
+.row .col-lg-4,
+.row .col-lg-8{
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+/* eRender()함수로 경고 띄었을 때, 경고문 스타일 설정 */
+.alert-warning{
+  font-weight: bold;
+  font-family: "Roboto", serif;
+}
+
+/* title이랑 description이 두 줄 이상이면 뒤에 ... 으로 하게끔 */
+.col-lg-8 h2,
+.col-lg-8 p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2; /* 최대 2줄 */
+  -webkit-line-clamp: 2; /* Webkit 기반 브라우저용 */
+  white-space: normal;
+}
+
+/* title 링크를 클릭했을 시, 밑줄 안남게 스타일 설정 */
+.col-lg-8 h2 a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 페이지네이션 스타일 설정 */
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+/* 각 페이지 hover 했을 시, 스타일 설정 */
+.page-item a:hover {
+  background-color: rgb(104, 141, 245);
+}
+
+/* 비활성화된 페이지네이션 스타일 설정 */
+.pagination .page-item.disabled a{
+  color: black;
+  cursor: not-allowed;
+}
+
+/* 반응형으로 슬로건 text 줄이기 */
+@media (max-width: 768px) {
+  .header-text {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text {
+    font-size: 4vw;
+  }
+}
+
+
+
+
